@@ -1,0 +1,114 @@
+/* Main container styling */
+.container {
+    padding: 0 15px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 30px;
+  }
+  
+  /* Timeline styling */
+  .timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  /* Timeline items styling */
+  .timeline-item {
+    position: relative;
+    padding: 20px 0;
+    border-bottom: 2px solid #e9ecef;
+    display: flex;
+    align-items: flex-start;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* .timeline-item:hover {
+    background-color: #f8f9fa;
+  } */
+  
+  /* Timeline icons styling */
+  .timeline-icon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    box-shadow: 0 0 0 4px #fff;
+    font-size: 1.5rem;
+    margin-right: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .timeline-icon.bg-success {
+    background-color: #28a745;
+  }
+  
+  .timeline-icon:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+  }
+  
+  /* Timeline content styling */
+  .timeline-content {
+    position: relative;
+    padding: 10px 20px;
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timeline-content h5 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0 0 10px;
+  }
+  
+  .timeline-content h6 {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0 0 10px;
+  }
+  
+  .timeline-content p {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin: 0 0 10px;
+  }
+  
+  .timeline-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .timeline-content ul li {
+    font-size: 0.9rem;
+    color: #333;
+    margin: 5px 0;
+    position: relative;
+    padding-left: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .timeline-content ul li:hover {
+    color: #007bff;
+  }
+  
+  .timeline-content ul li::before {
+    content: '\2022';
+    color: #007bff;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+  }
+  

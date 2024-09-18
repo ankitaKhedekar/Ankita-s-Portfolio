@@ -1,0 +1,346 @@
+/* General Styles */
+.navbar-custom {
+  background-color: #333; /* Black background */
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  /* Logo Styles */
+  .logo img {
+    height: 40px; /* Adjust as needed */
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer; /* Hand cursor */
+  }
+  
+  .nav-links a:hover, .nav-links a.active {
+    background-color: #575757;
+    border-radius: 4px;
+    color: #f4f4f4; /* Optional: change text color on hover */
+  }
+  
+  /* Toggle Button */
+  .toggle-button {
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggle-button button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer; /* Hand cursor */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .toggle-button button:hover {
+    background-color: white;
+    color: #333;
+  }
+  .nav-link:hover {
+    /* color: #007bff; */
+    cursor: pointer;
+  }
+
+/* Remove default underline from all nav-links */
+.navbar-nav .nav-link {
+  text-decoration: none;
+  color: #000; /* Default color for non-active links */
+  transition: color 0.3s, text-decoration-color 0.3s;
+
+}
+
+
+
+
+/* General Styles */
+.navbar-nav .nav-link {
+  text-decoration: none;
+  color: #000; /* Default color for non-active links */
+}
+
+
+
+
+
+.btn-outline-secondary {
+  margin-left: 15px;
+}
+/* Light Mode Styles */
+.light-mode {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --link-color: #007bff;
+  --link-active-color: #0056b3;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  --background-color: #000000;
+  --text-color: #ffffff;
+  --link-color: #00aaff;
+  --link-active-color: #0099cc;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* .navbar {
+  background-color: var(--background-color);
+} */
+
+.nav-link {
+  color: var(--text-color);
+}
+
+.nav-link.active {
+  text-decoration: underline;
+  text-decoration-color: var(--link-active-color);
+}
+
+.nav-link:hover {
+  color: var(--link-color);
+}
+
+.form-check-input:checked {
+  background-color: var(--link-color);
+  border-color: var(--link-color);
+}
+
+  /* Custom styles for toggle switch */
+  .form-check-input {
+    width: 1000px; /* Increase the width */
+    height: 30px; /* Increase the height */
+    border-radius: 10px; /* Optional: adjust border radius for a rounded look */
+  }
+  .form-check-input:checked {
+    background-color: #007bff; /* Blue color for dark mode */
+    border-color: #007bff; /* Border color for dark mode */
+  }
+  .form-check-input:checked:focus {
+    box-shadow: 0 0 0 .15rem rgba(38, 143, 255, .25); /* Blue shadow for focus */
+  }
+  .form-check-label {
+    margin-left: 0.15rem; /* Space between switch and label */
+  }
+  /* Optional: Adjust margin or padding to shift the toggle button */
+.nav-item .form-check {
+  margin-left: 10px; /* Adjust this value to shift the button */
+}
+.form-check-input:before {
+ 
+  background-color: white; /* Slider handle color */
+}
+.form-check {
+  padding: 0; /* Adjust as needed */
+}
+/* Container for the custom switch */
+.custom-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px; /* Width of the switch */
+  height: 34px; /* Height of the switch */
+}
+
+/* Hide the default checkbox */
+.custom-switch .form-check-input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Slider styles */
+.custom-switch .form-check-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  height: 100%;
+  position: relative;
+  border-radius: 50px; /* Oval shape */
+  background-color: #a79c9c; /* Default color */
+  transition: background-color 0.3s;
+}
+
+/* Slider before pseudo-element */
+.custom-switch .form-check-label:before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 26px; /* Size of the slider knob */
+  height: 26px;
+  border-radius: 50%; /* Round knob */
+  background-color: white;
+  transition: transform 0.3s;
+}
+
+/* When checkbox is checked, change slider color and position */
+.custom-switch .form-check-input:checked + .form-check-label {
+  background-color: #007bff; /* Color for dark mode */
+}
+
+/* When checkbox is checked, move the knob */
+.custom-switch .form-check-input:checked + .form-check-label:before {
+  transform: translateX(26px); /* Moves the knob to the right */
+}
+
+/* Optional: Change color of the label text */
+.custom-switch .form-check-label {
+  color: #000; /* Default color for the text */
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #000000; /* Black background */
+}
+
+.navbar-brand {
+  color: #fff; /* White text color for the brand */
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+  color: #fff; /* White text color for links */
+  font-weight: normal; /* Default font weight */
+  text-decoration: none; /* Remove default underline */
+}
+
+/* Active and Hover Effects */
+.navbar-nav .nav-link.active {
+  color: #007bff; /* Blue color for the active link */
+  font-weight: bold; /* Bold text */
+  text-decoration: underline; /* Underline text */
+  text-decoration-color: #007bff; /* Blue underline */
+  text-decoration-thickness: 5px; /* Thickness of the underline */
+  text-underline-offset: 5px; /* Distance between the text and underline */
+}
+
+.navbar-nav .nav-link:hover {
+
+  text-decoration-color: #007bff; /* Blue underline */
+  text-decoration-thickness: 2px; /* Thickness of the underline */
+  text-underline-offset: 3px; /* Distance between the text and underline */
+}
+
+/* .navbar-nav .nav-link.active:hover {
+  color: #007bff; 
+  cursor: default; 
+} */
+/* .navbar-custom .nav-link.active {
+  color: blue;
+  border-bottom: 2px solid blue;
+} */
+
+
+/* Navbar and Links Styling */
+.navbar-custom {
+  background-color: #333;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+
+.navbar-nav .nav-link.active-link {
+  position: relative;
+  /* color: blue; */
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link.active-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: blue;
+}
+
+/* 
+.typing-container {
+  text-align: center;
+  margin-top: 8%;
+}
+
+h1 {
+  font-size: 6rem;
+  color: #000000;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #000000;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.cursor {
+  font-weight: bold;
+  font-size: 2rem;
+  color: #0e0e0e;
+  animation: blink 0.7s infinite;
+}
+
+
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+
+}
+
+
+.social-icons {
+  margin-top: 20px;
+}
+
+
+.social-icons a {
+  margin: 0 15px;
+  color: #000000;
+  font-size: 2rem;
+  transition: color 0.3s;
+}
+ */

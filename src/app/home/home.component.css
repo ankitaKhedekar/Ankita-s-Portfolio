@@ -1,0 +1,56 @@
+
+.typing-container {
+    text-align: center;
+    margin-top: 8%;
+  }
+  
+  h1 {
+    font-size: 6rem;
+    color: #000000;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #000000;
+  }
+  
+  .bold-text {
+    font-weight: bold;
+  }
+  
+  .cursor {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #0e0e0e;
+    animation: blink 0.7s infinite;
+  }
+  
+  
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  
+  }
+  
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  
+  .social-icons a {
+    margin: 0 15px;
+    color: #000000;
+    font-size: 2rem;
+    transition: color 0.3s;
+  }
+  
+  
