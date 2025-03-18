@@ -1,3 +1,5 @@
 export const environment = {
-    production: true
+    production: true,
+    apiBaseUrl: 'https://api.ankitasportfolio.com' // Replace this with your actual API URL
+
   };
